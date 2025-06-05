@@ -1,35 +1,32 @@
 <template>
   <div id="app">
-    <div class="container">
-
-<!-- Barra de navegación fija en la parte superior -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top mb-4">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mi Sitio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">MODELOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CARROS RECONSTRUIDOS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/PartesAutos">PARTES DE AUTOS</a>
-                    </li>
-
-                </ul>
-
-            </div>
+    <!-- Barra de navegación fija -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Mi Sitio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- En App.vue -->
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <router-link class="nav-link active" aria-current="page" to="/">INICIO</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/vehiculos">CARROS RECONSTRUIDOS</router-link>
+            </li>
+            <li class="nav-item">
+              <router-link class="nav-link" to="/partes-autos">PARTES DE AUTOS</router-link>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+
+    <!-- Contenedor principal con espacio superior -->
+    <div class="container mt-5 pt-4">
       <router-view></router-view>
     </div>
   </div>
@@ -42,5 +39,5 @@ export default {
 </script>
 
 <style scoped>
-/* Estilos opcionales */
+/* Eliminado el estilo body que debe estar en el archivo principal */
 </style>
