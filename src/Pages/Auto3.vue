@@ -56,24 +56,15 @@
               <li>Documentación completa desde nuevo</li>
               <li>Premios en concursos de autos clásicos</li>
             </ul>
-            <button class="btn btn-inquiry mt-3">
+            <router-link to="/contacto" class="btn btn-inquiry mt-3">
               <i class="fas fa-envelope me-2"></i>Solicitar información
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
       
       <div class="col-lg-6">
-        <img src="https://www.corvsport.com/wp-content/uploads/2020/12/1963-Corvette-Sting-Ray-Split-Window-Coupe.jpg" class="img-fluid rounded vehicle-img" alt="Chevrolet Corvette 1963">
-        
-        <div class="row mt-4">
-          <div class="col-md-6 mb-3">
-            <img src="https://www.corvsport.com/wp-content/uploads/2020/12/1963-Corvette-interior.jpg" class="img-fluid rounded" alt="Interior Corvette">
-          </div>
-          <div class="col-md-6 mb-3">
-            <img src="https://www.corvsport.com/wp-content/uploads/2020/12/1963-Corvette-engine.jpg" class="img-fluid rounded" alt="Motor Corvette">
-          </div>
-        </div>
+        <img src="https://www.excelenciasdelmotor.com/sites/default/files/sites/default/files/imagenes-portada-ffp/corvettestingray1963wallpaper-1.jpg" class="img-fluid rounded vehicle-img" alt="Chevrolet Corvette 1963">
       </div>
     </div>
   </main>

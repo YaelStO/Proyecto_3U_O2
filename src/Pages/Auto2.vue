@@ -52,24 +52,15 @@
               <li>Sistema de audio AM/FM vintage</li>
               <li>Certificado de autenticidad GM</li>
             </ul>
-            <button class="btn btn-inquiry mt-3">
+            <router-link to="/contacto" class="btn btn-inquiry mt-3">
               <i class="fas fa-envelope me-2"></i>Solicitar información
-            </button>
+            </router-link>
           </div>
         </div>
       </div>
       
       <div class="col-lg-6">
-        <img src="https://www.camaro-central.com/1969_camaro_01.jpg" class="img-fluid rounded vehicle-img" alt="Chevrolet Camaro 1969">
-        
-        <div class="row mt-4">
-          <div class="col-md-6 mb-3">
-            <img src="https://www.camaro-central.com/1969_camaro_interior.jpg" class="img-fluid rounded" alt="Interior Camaro">
-          </div>
-          <div class="col-md-6 mb-3">
-            <img src="https://www.camaro-central.com/1969_camaro_engine.jpg" class="img-fluid rounded" alt="Motor Camaro">
-          </div>
-        </div>
+        <img src="https://p.turbosquid.com/ts-thumb/Wj/2KDSQi/7U/chevrolet_camaro_z28_1969_convertible_0000/jpg/1687447780/2500x1406/fit_q99/f82c8e6685ad19cd8d1be2d984738a7755508420/chevrolet_camaro_z28_1969_convertible_0000.jpg" class="img-fluid rounded vehicle-img" alt="Chevrolet Camaro 1969">
       </div>
     </div>
   </main>
