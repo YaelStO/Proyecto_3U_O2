@@ -12,7 +12,6 @@
 
   <!-- Autos Destacados -->
   <section class="container mb-5" id="destacado">
-    <h2 class="text-center mb-4">¡Lo más destacado!</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <!-- Auto 1 -->
       <div class="col">
@@ -101,7 +100,6 @@
 
   <!-- Autos Destacados -->
   <section class="container mb-5" id="destacado">
-    <h2 class="text-center mb-4">¡Lo más destacado!</h2>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <!-- Auto 1 -->
       <div class="col">
@@ -140,6 +138,95 @@
       </div>
     </div>
   </section>
+<section class="container mb-5" id="destacado">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Auto 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://acnews.blob.core.windows.net/imgnews/extralarge/NAZ_6e6d17069f684066a2c971af16e88f51.webp" class="card-img-top img-fluid" alt="chevy" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Chevrolet Chevy</h5>
+            <p class="card-text">Precio: $35,000 MXN</p>
+            <a href="/chevy" class="btn btn-warning mt-auto">Ver auto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auto 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.nissanoaxaca.com.mx/static/agency-go-virtual/Nissan/NP300/2023/Exterior/1.jpg" class="card-img-top img-fluid" alt="np 300" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">NISSAN NPM 300</h5>
+            <p class="card-text">Precio: $52,000 USD</p>
+            <a href="/npnissan" class="btn btn-warning mt-auto">Ver auto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auto 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://static.wixstatic.com/media/3a3da7_c4e20984981346749a4536bdc60d5fe4.jpg/v1/fill/w_858,h_428,al_c,q_85,enc_avif,quality_auto/3a3da7_c4e20984981346749a4536bdc60d5fe4.jpg" class="card-img-top img-fluid" alt="aveo" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Chevrolet Aveo</h5>
+            <p class="card-text">Precio: $28,000 USD</p>
+            <a href="/aveo" class="btn btn-warning mt-auto">Ver auto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Hero Section -->
+  <section class="hero-section text-center" id="inicio">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Autos Deportivos</h1>
+      <p class="lead">Descubre modelos icónicos y legendarios</p>
+    </div>
+  </section>
+
+  <!-- Autos Destacados -->
+  <section class="container mb-5" id="destacado">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <!-- Auto 1 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://hips.hearstapps.com/hmg-prod/images/img-5-6655e9bb8e066.jpg?crop=1xw:1xh;center,top&resize=980:*" class="card-img-top img-fluid" alt="Mustang" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Porsche</h5>
+            <p class="card-text">Precio: $5000,000 USD</p>
+            <a href="/porche" class="btn btn-warning mt-auto">Ver auto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auto 2 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://runrunes.org/wp-content/uploads/2011/02/1_1-647x432.jpg" class="card-img-top img-fluid" alt="Shelby GT500" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">MTX</h5>
+            <p class="card-text">Precio: $500,000 USD</p>
+            <a href="/mtx" class="btn btn-warning mt-auto">Ver auto</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Auto 3 -->
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.americanmusclecarmuseum.com/files/cars/thumbs/1972-chevrolet-cheyenne-super-4x4-pickup-c10-1-2-ton_7505.jpg" class="card-img-top img-fluid" alt="Pickup" style="height: 200px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">BMW</h5>
+            <p class="card-text">Precio: $280,000 USD</p>
+            <a href="/bmw" class="btn btn-warning mt-auto">Ver auto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </template>
 
 <style>

@@ -14,6 +14,11 @@ import Partes from '../Pages/Partes.vue'
 import Tsuru from '../Pages/Tsuru.vue'
 import Chevy from '../Pages/Chevy.vue'
 import Contacto from '../Pages/Contacto.vue'
+import Npnissan from '../Pages/Npnissan.vue'
+import Aveo from '../Pages/Aveo.vue'
+import Mtx from '../Pages/Mtx.vue'
+import Bmw from '../Pages/Bmw.vue'
+import Porche from '../Pages/Porche.vue'
 
 const routes = [
   {
@@ -91,6 +96,34 @@ const routes = [
         name: 'Contacto',
         component: Contacto
 
+    }, 
+    {
+      path: '/chevy',
+      name: 'Chevy',
+      component: Chevy
+    },
+    {
+      path: '/npnissan',
+      name: 'Npnissan',
+      component: Npnissan
+    },
+    {
+      path: '/aveo',
+      name: 'Aveo',
+      component: Aveo
+    },
+    {
+      path: '/mtx',
+      name: 'Mtx',
+      component: Mtx
+    },
+    { path: '/bmw',
+      name: 'Bmw',
+      component: Bmw
+    },
+    { path: '/porche',
+      name: 'Porche',
+      component: Porche
     }
 ]
 

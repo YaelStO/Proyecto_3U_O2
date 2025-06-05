@@ -63,16 +63,9 @@ export default {
       </div>
       
       <div class="col-lg-6">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_956442-MLM50127430728_052022-O.webp" class="img-fluid rounded vehicle-img" alt="Chevrolet Chevy 2012">
+        <img src="https://acnews.blob.core.windows.net/imgnews/extralarge/NAZ_6e6d17069f684066a2c971af16e88f51.webp" class="img-fluid rounded vehicle-img" alt="Chevrolet Chevy 2012">
         
-        <div class="row mt-4">
-          <div class="col-md-6 mb-3">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_744861-MLM50127430729_052022-O.webp" class="img-fluid rounded" alt="Interior Chevy">
-          </div>
-          <div class="col-md-6 mb-3">
-            <img src="https://http2.mlstatic.com/D_NQ_NP_610522-MLM50127430730_052022-O.webp" class="img-fluid rounded" alt="Motor Chevy">
-          </div>
-        </div>
+        
       </div>
     </div>
   </main>

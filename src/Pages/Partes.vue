@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const partes = ref([
   { id: 1, nombre: 'Filtro de Aire', marca: 'Bosch', precio: 350, stock: 15, categoria: 'Motor' },
@@ -9,7 +9,20 @@ const partes = ref([
   { id: 5, nombre: 'Aceite Sintético 5W-30', marca: 'Mobil 1', precio: 450, stock: 25, categoria: 'Lubricantes' },
   { id: 6, nombre: 'Bujías de Encendido', marca: 'NGK', precio: 280, stock: 30, categoria: 'Motor' },
   { id: 7, nombre: 'Correa de Distribución', marca: 'Gates', precio: 950, stock: 7, categoria: 'Motor' },
-  { id: 8, nombre: 'Lámpara H4', marca: 'Osram', precio: 320, stock: 18, categoria: 'Eléctrico' }
+  { id: 8, nombre: 'Lámpara H4', marca: 'Osram', precio: 320, stock: 18, categoria: 'Eléctrico' },
+  // Nuevas partes agregadas
+  { id: 9, nombre: 'Radiador', marca: 'Denso', precio: 2800, stock: 6, categoria: 'Refrigeración' },
+  { id: 10, nombre: 'Alternador', marca: 'Bosch', precio: 4200, stock: 4, categoria: 'Eléctrico' },
+  { id: 11, nombre: 'Termostato', marca: 'Wahler', precio: 380, stock: 14, categoria: 'Refrigeración' },
+  { id: 12, nombre: 'Sensor de Oxígeno', marca: 'NTK', precio: 1250, stock: 9, categoria: 'Motor' },
+  { id: 13, nombre: 'Bomba de Combustible', marca: 'Delphi', precio: 1850, stock: 5, categoria: 'Combustible' },
+  { id: 14, nombre: 'Rotulas de Dirección', marca: 'Moog', precio: 680, stock: 11, categoria: 'Dirección' },
+  { id: 15, nombre: 'Junta de Culata', marca: 'Victor Reinz', precio: 750, stock: 8, categoria: 'Motor' },
+  { id: 16, nombre: 'Silenciador', marca: 'Walker', precio: 3200, stock: 3, categoria: 'Escape' },
+  { id: 17, nombre: 'Kit de Embrague', marca: 'Luk', precio: 4200, stock: 4, categoria: 'Transmisión' },
+  { id: 18, nombre: 'Bomba de Agua', marca: 'GMB', precio: 950, stock: 7, categoria: 'Refrigeración' },
+  { id: 19, nombre: 'Barra Estabilizadora', marca: 'Meyle', precio: 1350, stock: 5, categoria: 'Suspensión' },
+  { id: 20, nombre: 'Filtro de Combustible', marca: 'Mahle', precio: 420, stock: 16, categoria: 'Combustible' }
 ]);
 
 const searchQuery = ref('');
@@ -122,9 +135,9 @@ const sortTable = (column) => {
                   <button class="btn btn-sm btn-outline-primary me-2">
                     <i class="fas fa-info-circle"></i>
                   </button>
-                  <button class="btn btn-sm btn-outline-success">
-                    <i class="fas fa-cart-plus"></i>
-                  </button>
+                  <router-link to="/contacto" class="btn btn-sm btn-outline-dark">
+                    <i class="fas fa-phone-alt"></i>
+                  </router-link>
                 </td>
               </tr>
             </tbody>
@@ -136,6 +149,11 @@ const sortTable = (column) => {
         </div>
       </div>
     </div>
+
+    <!-- Botón flotante de contacto -->
+    <router-link to="/contacto" class="float-btn-contact">
+      <i class="fas fa-phone-alt me-2"></i> Contacto
+    </router-link>
   </div>
 </template>
 
@@ -170,5 +188,38 @@ const sortTable = (column) => {
 
 .input-group-text {
   background-color: #f8f9fa;
+}
+
+.float-btn-contact {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.float-btn-contact:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.float-btn-contact i {
+  font-size: 1.2rem;
+}
+
+.btn-outline-dark:hover {
+  background-color: #212529;
+  color: white;
 }
 </style>
